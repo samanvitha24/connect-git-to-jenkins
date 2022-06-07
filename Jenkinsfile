@@ -4,8 +4,8 @@ pipeline {
     // this section configures Jenkins options
     options {
 
-        // only keep 10 logs for no more than 10 days
-        buildDiscarder(logRotator(daysToKeepStr: '10', numToKeepStr: '10'))
+        // only keep 11 logs for no more than 10 days
+        buildDiscarder(logRotator(daysToKeepStr: '11', numToKeepStr: '10'))
 
         // cause the build to time out if it runs for more than 12 hours
         timeout(time: 12, unit: 'HOURS')
